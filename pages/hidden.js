@@ -16,10 +16,12 @@ const HiddenPage = () => {
   return (
     <div style={pageStyles.page}>
       <div className={styles.container}>
+        <img src="/images/hidden/profile_img.png" alt="Profile" className={styles.profileImage} />
         <Head>
           <title>Seung-Eun Lee's Links</title>
         </Head>
         <h1 className={styles.username}>SeungEun Lee</h1>
+
         <div className={styles.linksContainer}>
           {links.map((link, index) => (
             <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" className={styles.linkButton}>
