@@ -20,11 +20,16 @@ const HiddenPage = () => {
         <Head>
           <title>Seung-Eun Lee's Links</title>
         </Head>
-        <h1 className={styles.username}>SeungEun Lee</h1>
+        <h1 className={`${styles.username} font-sf-pro`}>Seung-Eun (Cathy) Lee</h1>
+
+        <p className={`${styles.bio} font-sf-pro`}>
+          M.Arch Student at Texas A&M Univeristy<br />
+          Healthcare Architecture, Evidence-Based Design, Sustainability
+        </p>
 
         <div className={styles.linksContainer}>
           {links.map((link, index) => (
-            <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" className={styles.linkButton}>
+            <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" className={`${styles.linkButton} font-sf-pro`}>
               {link.name}
             </a>
           ))}
