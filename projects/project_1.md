@@ -1,6 +1,9 @@
 ---
 title: 'Designing a Location Data Collection SDK'
-date: '2025-10-18'
+summary: 'Developed the location data collection logic as an SDK to simplify use across in-house apps and potential future client integrations.'
+description: ' To enable in-house location data collection apps to easily gather location information, the location data collection logic was developed as an SDK rather than a standalone module. This decision was made based on the expectation that external clients might also require the same location data collection functionality in the future.'
+date: '2020.6 - 2020.10 (5months)'
+tags: ["Android", "Java"]
 ---
 
 ### Background

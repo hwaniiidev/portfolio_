@@ -12,6 +12,7 @@ export default function Header() {
       </div>
       <nav className={styles.nav}>
         <Link href="/#about" passHref legacyBehavior><a className={styles.navLink}>About</a></Link>
+        <Link href="/#product" passHref legacyBehavior><a className={styles.navLink}>Product</a></Link>
         <Link href="/#projects" passHref legacyBehavior><a className={styles.navLink}>Projects</a></Link>
         <Link href="/#contact" passHref legacyBehavior><a className={styles.navLink}>Contact</a></Link>
       </nav>
