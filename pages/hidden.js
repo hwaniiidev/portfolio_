@@ -16,7 +16,9 @@ const HiddenPage = () => {
   return (
     <div style={pageStyles.page}>
       <div className={styles.container}>
-        <img src="/images/hidden/profile_img.png" alt="Profile" className={styles.profileImage} />
+        <div className={styles.profileImageContainer}>
+          <img src="/images/hidden/profile_img.png" alt="Profile" className={styles.profileImage} />
+        </div>
         <Head>
           <title>Seung-Eun Lee's Links</title>
         </Head>
@@ -24,7 +26,7 @@ const HiddenPage = () => {
 
         <p className={`${styles.bio} font-sf-pro`}>
           M.Arch Student at Texas A&M Univeristy<br />
-          Healthcare Architecture, Evidence-Based Design, Sustainability
+          Healthcare Architecture, Evidence<br/>-Based Design, Sustainability
         </p>
 
         <div className={styles.linksContainer}>
