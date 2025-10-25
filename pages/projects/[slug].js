@@ -81,7 +81,7 @@ export default function Project({ frontmatter, contentHtml, productSlug, product
             )}
             {!product && <p className={styles.projectDate}>{frontmatter.date}</p>}
           </div>
-          <p>{frontmatter.description}</p>
+          <p style={{textIndent: '1em'}}>{frontmatter.description}</p>
           <div className={styles.tagsContainer}>
             {frontmatter.tags.map((tag) => (
               <span key={tag} className={styles.tag}>{tag}</span>

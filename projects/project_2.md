@@ -1,20 +1,28 @@
 ---
-title: 'Designing a Location Data Collection SDK'
-summary: 'Developed the location data collection logic as an SDK to simplify use across in-house apps and potential future client integrations.'
-description: ' To enable in-house location data collection apps to easily gather location information, the location data collection logic was developed as an SDK rather than a standalone module. This decision was made based on the expectation that external clients might also require the same location data collection functionality in the future.'
-date: '2020.6 - 2020.10 (5months)'
-tags: ["Android", "Java"]
+title: 'Background Location Permission Review and Client Distribution Guide Preparation Role'
+summary: 'Because of Google Play’s review for background location access, client apps using the LoFlat SDK need guidance on how to pass the review smoothly.'
+description: 'Because of Google Play’s review for background location access, client apps using the Loplat SDK need guidance on how to pass the review smoothly. It is crucial for developers to clearly explain the purpose and necessity of accessing location data in the background, ensuring compliance with Google Play’s policies. Providing detailed instructions and best practices can help prevent app rejections and streamline the approval process.'
+date: '2020.7 - 2020.9 (3months)'
+detail_page: true
+product: 'product_2'
+tags: [ 'Android', 'Java', 'Kotlin' ]
 ---
 
 ### Background
-- There are several in-house service apps that collect location data. To reduce maintenance costs and maintain consistent data quality, it became necessary to unify the location collection logic.
-- External apps requested integration to enable crowdsourced location data collection and reward distribution — similar to how our own app, Cashplace, operates.
-  <br>
-  <br>
-### Responsibilities
-- Android feature design and development (100%)
-  <br>
-  <br>
-### Architecture
-<img src="/images/project_1/111.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
 
+&nbsp;&nbsp;&nbsp;&nbsp;There are cases where apps that do not require location information obtain users’ locations
+improperly (spyware), or even when location data is needed for the service, the app collects it without properly
+notifying the user. To prevent this, apps that continuously access location information are required to undergo the
+‘Location Permission – Always Allow’ review.
+
+### Responsibilities
+
+- Designed and developed Android functionalities required for the review <br>(Design: 60%, Development: 100%)
+- Authored client distribution documentation (100%)
+- Identified and resolved causes of review rejections — resubmitted 8 times (100%)
+- Supported clients during their review and approval processes (100%)
+  <br>
+  <br>
+
+### Document
+&nbsp;&nbsp;&nbsp;&nbsp;[Click Link](https://docs.google.com/document/d/1zAfnrFkpN081OoNoRc9tTqSCx4c8VZh4av3CHL13xcc/edit?usp=sharing)

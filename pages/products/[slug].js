@@ -49,8 +49,20 @@ export default function Product({ frontmatter, contentHtml }) {
       <main className={styles.main}>
         <div className={styles.projectPage}>
           <h1>{frontmatter.title}</h1>
-          <p className={styles.projectDate}>{frontmatter.date}</p>
-          <p>{frontmatter.description}</p>
+          <div className={styles.projectMeta}>
+            <p className={styles.projectDate}>
+              {frontmatter.company && frontmatter.company_url && (
+                <>
+                  <a href={frontmatter.company_url} target="_blank" rel="noopener noreferrer" className={styles.productLink}>
+                    {frontmatter.company}
+                  </a>
+                  {' - '}
+                </>
+              )}
+              {frontmatter.date}
+            </p>
+          </div>
+            <p style={{textIndent: '1em'}}>{frontmatter.description}</p>
           <div className={styles.tagsContainer}>
             {frontmatter.tags.map((tag) => (
               <span key={tag} className={styles.tag}>{tag}</span>

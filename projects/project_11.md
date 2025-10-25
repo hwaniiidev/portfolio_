@@ -4,8 +4,8 @@ summary: 'Developed a pedometer and check-in feature for a crowdsourcing and rew
 description: 'This project involved creating a crowdsourcing and rewards application to expand B2C services. My main responsibilities were to implement a pedometer feature for tracking steps and a check-in function. This included integrating the loplat SDK with the Flutter framework for background communication using isolates, syncing step counts, and designing and developing the user interface and experience for both the pedometer and check-in features.'
 date: '2022.2 - 2022.6 (5months)'
 detail_page: true
-product: 'product_0'
-tags: [ 'Flutter', 'Dart' ]
+product: 'product_3'
+tags: [ 'TypeScript', 'Node.js', 'Oracle' ]
 ---
 
 ### Background
