@@ -1,5 +1,5 @@
 ---
-title: 'Paradise Hotel App API Server'
+title: 'Paradise Hotel'
 date: '2023-10-27'
 description: 'This is product 3.'
 tags: ['product', 'sample']

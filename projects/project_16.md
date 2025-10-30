@@ -1,11 +1,11 @@
 ---
-title: 'App Api 서버 설계 및 유지 보수 '
+title: 'Wclub 리뉴얼 flutter 개발'
 summary: 'Developed a pedometer and check-in feature for a crowdsourcing and rewards app to expand B2C services. Integrated a pedometer and developed the UI/UX for the pedometer and check-in functions.'
-description: '기존에 웹 서비스 뿐이었던 호텔 서비스를 앱으로 확장하는 가운데 이에 필요한 app api server 개발.'
-date: '2022.2 - 2022.6 (5months)'
+description: 'flutter App 개발'
+date: '2024.4 - 2024.10 (7months)'
 detail_page: true
-product: 'product_3'
-tags: [ 'TypeScript', 'Node.js', 'Oracle' ]
+product: 'product_5'
+tags: [ 'Flutter', 'Dart' ]
 ---
 
 ### Background
