@@ -23,6 +23,6 @@ tags: [ 'Android', 'Java', 'Kotlin']
 Average number of location recognition requests per user per day increased by 45%
 
 - Before improvement:
-  <img src="/images/project_8/111.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+  <img src="/images/project_8/figure_1.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
 - After improvement:
-  <img src="/images/project_8/222.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+  <img src="/images/project_8/figure_2.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />

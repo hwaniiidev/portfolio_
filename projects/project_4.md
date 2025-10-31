@@ -19,7 +19,7 @@ tags: [ 'Android', 'Java', 'Kotlin' ]
   <br>
   <br>
 ### Architecture
-<img src="/images/project_4/111.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+<img src="/images/project_4/figure_1.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
   <br>
   <br>  
   <br>
@@ -37,7 +37,7 @@ tags: [ 'Android', 'Java', 'Kotlin' ]
   <br>
   <br>
 ### Architecture
-<img src="/images/project_4/222.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+<img src="/images/project_4/figure_2.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
 
 #### Criteria for Selecting Duplicate Stores
 &nbsp;&nbsp;&nbsp;&nbsp;Among the Search Place Engine results (A) and the SDK location recognition results (B), the store with the highest priority is selected.
@@ -84,4 +84,4 @@ if (A.size() > 0 && B.size() > 0) {
 ```
 
 #### Feature Behavior
-<img src="/images/project_4/333.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+<img src="/images/project_4/figure_3.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />

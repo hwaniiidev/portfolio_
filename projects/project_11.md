@@ -1,21 +1,35 @@
 ---
-title: 'App Api 서버 설계 및 유지 보수 '
-summary: 'Developed a pedometer and check-in feature for a crowdsourcing and rewards app to expand B2C services. Integrated a pedometer and developed the UI/UX for the pedometer and check-in functions.'
-description: '기존에 웹 서비스 뿐이었던 호텔 서비스를 앱으로 확장하는 가운데 이에 필요한 app api server 개발.'
-date: '2022.2 - 2022.6 (5months)'
+title: 'App API Server Design and Maintenance'
+summary: 'Designed, developed, and maintained the on-premise API server (Node.js/Express) for the Paradise City Hotel''s mobile app, expanding services from web to mobile.'
+description: "Responsible for the end-to-end design, development, and maintenance of the App API server for the Incheon Paradise City Hotel. This project expanded the existing web-only services to a mobile app, introducing new features like mobile room keys and location-based promotions. The entire system was developed on-premise, utilizing the client's physical servers, and architected for high availability with L4 load balancing, Nginx reverse proxy, and an Express.js backend."
+date: '2022.2 - 2025.6 (41months)'
 detail_page: true
 product: 'product_3'
-tags: [ 'TypeScript', 'Node.js', 'Oracle' ]
+tags: [ 'ubuntu', 'nginx', 'Expres.js', 'TypeScript', 'Oracle' ]
 ---
 
 ### Background
-&nbsp;&nbsp;&nbsp;&nbsp;Crowdsourcing and rewards app for B2C service expansion.
+A project commissioned for the development of the Incheon Paradise City Hotel app. <br>
+Developed by adding mobile-exclusive features (e.g., mobile room key, location-based promotions) in addition to existing web service functions.<br>
+The client had its own servers, so development was conducted on-premise.<br>
 
 ### Responsibilities
-- Integrated communication between the loplat SDK and the Flutter framework in the background using background isolates.
-- Integrated step count functionality.
-- Designed and developed the UI/UX for the pedometer and check-in features.
+- App API design and development (100%)
+- Additional new feature development and server maintenance (100%)
 
+### Key Features
+- Hotel accommodation product inquiry, reservation, and payment
+- Room service requests during stay and admission QR code generation for facility use
+- Casino-exclusive: Casino point inquiry
+- Mobile room key issuance and card key information return
+- Ordering system available on web pads used by casino staff
 
-### SDK Architecture
+### Architecture
+Load balancing via L4 switching
 <img src="/images/project_11/figure_1.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+
+Web App Application Architecture
+<img src="/images/project_11/figure_2.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+
+Api Log Viewer
+<img src="/images/project_11/figure_3.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />

@@ -17,10 +17,10 @@ tags: [ 'Android', 'Java', 'Kotlin']
 - Improvement of beacon signal similarity comparison algorithm (100%)
 
 ### SDK Usage Scenario
-<img src="/images/project_9/111.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+<img src="/images/project_9/figure_1.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
 
 ### SDK Architecture
-<img src="/images/project_9/222.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+<img src="/images/project_9/figure_2.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
 
 ### Detailed Design of Vehicle Recognition Scanner
-<img src="/images/project_9/333.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+<img src="/images/project_9/figure_3.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />

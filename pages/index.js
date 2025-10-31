@@ -48,9 +48,12 @@ export async function getStaticProps() {
 
   const projectsWithProducts = projects.map(project => {
     const product = products.find(p => p.slug === project.frontmatter.product) || null;
+    const imagePath = path.join(process.cwd(), 'public', 'images', project.slug, 'figure_1.png');
+    const imageExists = fs.existsSync(imagePath);
     return {
       ...project,
       product,
+      imageExists,
     };
   });
 
@@ -122,31 +125,46 @@ export default function HomePage({ projects, products }) {
 
         <section id="projects" className={styles.section}>
           <h2 className={styles.sectionTitle}>Projects</h2>
-          {projects.slice(0, visibleProjects).map((project) => {
-            const Wrapper = project.frontmatter.detail_page ? Link : 'div';
-            const wrapperProps = project.frontmatter.detail_page ? { href: `/projects/${project.slug}`, key: project.slug, className: styles.projectLink } : { key: project.slug };
+          <div className={styles.projectsGrid}>
+            {projects.slice(0, visibleProjects).map((project) => {
+              const Wrapper = project.frontmatter.detail_page ? Link : 'div';
+              const wrapperProps = project.frontmatter.detail_page ? { href: `/projects/${project.slug}`, className: styles.projectLink } : {};
 
-            return (
-              <Wrapper {...wrapperProps}>
-                <div className={`${styles.projectCard} ${!project.frontmatter.detail_page ? styles.disabledCard : ''}`}>
-                  <h3>{project.frontmatter.title}</h3>
-                  <p>{project.frontmatter.summary}</p>
-                  <div className={styles.projectMeta}>
-                      <p className={styles.projectDate}>
+              return (
+                <div key={project.slug} className={styles.projectCardWrapper}>
+                  <Wrapper key={project.slug} {...wrapperProps}>
+                    <div className={`${styles.projectCard} ${!project.frontmatter.detail_page ? styles.disabledCard : ''}`}>
+                      {project.imageExists && (
+                        <div className={styles.projectImageContainer}>
+                          <img src={`/images/${project.slug}/figure_1.png`} alt={project.frontmatter.title} className={styles.projectImage} />
+                        </div>
+                      )}
+                      <h3>{project.frontmatter.title}</h3>
+                      <div className={styles.projectMeta}>
+                        <p className={styles.projectDate}>
                           {project.product && (
-                              <>
-                                  <span className={styles.productLink}>{project.product.frontmatter.title}</span>
-                                  {' - '}
-                              </>
+                            <>
+                              <span className={styles.productLink}>{project.product.frontmatter.title}</span>
+                              {' - '}
+                            </>
                           )}
                           {project.frontmatter.date}
-                      </p>
-                  </div>
-
+                        </p>
+                      </div>
+                      <div className={styles.projectSummary}>
+                          <div className={styles.projectSummaryContent}>{project.frontmatter.summary}</div>
+                          <div className={styles.tagsContainer}>
+                              {project.frontmatter.tags.map((tag) => (
+                                  <span key={tag} className={styles.tag}>{tag}</span>
+                              ))}
+                          </div>
+                      </div>
+                    </div>
+                  </Wrapper>
                 </div>
-              </Wrapper>
-            );
-          })}
+              );
+            })}
+          </div>
           {visibleProjects < projects.length && (
             <div className={styles.loadMoreContainer}>
               <button onClick={loadMoreProjects} className={styles.loadMoreButton}>
@@ -154,16 +172,6 @@ export default function HomePage({ projects, products }) {
               </button>
             </div>
           )}
-        </section>
-
-        <section id="contact" className={styles.section}>
-          <h2 className={styles.sectionTitle}>Contact</h2>
-          <p>
-            You can reach me at
-          </p>
-          <p>
-            <a href="mailto:sinhwan0211@gmail.com" className={styles.navLink}>sinhwan0211@gmail.com</a>
-          </p>
         </section>
       </main>
 

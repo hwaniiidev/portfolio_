@@ -1,7 +1,7 @@
 ---
 title: 'Wclub 매칭 알고리즘 및 화상 전화'
-summary: 'Developed a pedometer and check-in feature for a crowdsourcing and rewards app to expand B2C services. Integrated a pedometer and developed the UI/UX for the pedometer and check-in functions.'
-description: 'flutter API 개발. 교육 플랫폼'
+summary: ''
+description: ''
 date: '2024.1 - 2024.3 (3months)'
 detail_page: true
 product: 'product_5'

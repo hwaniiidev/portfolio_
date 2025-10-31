@@ -59,7 +59,7 @@ it needs to be decided in a way that does not affect the number of location requ
 #### 2nd Progress Sharing:
 ##### Number of Location Requests
 Sharing the monitoring results since March 25th, when version v2.0.9.6.4.2 with the ActivityRecognition.getClient interval time adjusted to 30 seconds was deployed.
-<img src="/images/project_5/111.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+<img src="/images/project_5/figure_1.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
 No particular issues have been found so far due to the increase in the interval from 10 seconds to 30 seconds. The pattern of maintaining a constant number of requests on weekdays and a sharp decrease on weekends (Saturday, Sunday) is similar to the pattern of the previous 4 weeks.
 
 #### Final Progress Sharing and Problem Resolution:
@@ -67,7 +67,7 @@ In the previous test, the session ratio that would be included in the warning in
 - Speculation: (In the permission used in versions before Android 10, all activity detections were counted as unnecessary wake ups. Google, recognizing this as a problem, added a different permission from Android 10 and modified it so that wake ups occurring from the newly added permission are not counted.)
 - To confirm this speculation, we set the ActivityRecognition.getClient interval time to 30 minutes and deployed it as v2.0.9.6.5.1 for testing in Cashplace. The reason for setting it to 30 minutes was that Google counts wake ups as unnecessary if they exceed 10 per hour, so we judged it to be an appropriate cycle that does not exceed 10 and does not significantly affect the Cashplace location recognition results.
 - Number of Location Requests
-  <img src="/images/project_5/222.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+  <img src="/images/project_5/figure_2.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
   Compared to the previous 4 weeks (March), it is on a downward trend, but it has been on a downward trend since March, and there were many external factors, so it is judged that adjusting the interval does not have a significant impact on the number of location recognition requests.
 - Samsung Device Care
   After updating to v2.0.9.6.5.1, the "Device waking up too frequently" issue is no longer occurring.
@@ -75,11 +75,11 @@ In the previous test, the session ratio that would be included in the warning in
   There is a clear difference from the previous test (.v2.0.9.6.4.2 interval cycle 30 seconds).
   - Interval cycle 10 seconds (initial problem recognition situation)
     Unnecessary wake up ratio: 7-9%
-    <img src="/images/project_5/333.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+    <img src="/images/project_5/figure_3.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
   - Interval cycle 30 seconds
     Unnecessary wake up ratio: 4.97%
-    <img src="/images/project_5/444.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+    <img src="/images/project_5/figure_4.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
   - Interval cycle 30 minutes
     Unnecessary wake up ratio: 0.86%
-    <img src="/images/project_5/555.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+    <img src="/images/project_5/figure_5.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
 - The session ratio counted as abnormal operation on Android 9 has been significantly reduced from 45-55% to 5%. On Android 10 and 11, it remains below 1% as before.

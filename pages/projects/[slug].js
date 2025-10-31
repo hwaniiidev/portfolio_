@@ -1,4 +1,3 @@
-
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -8,6 +7,9 @@ import Head from 'next/head';
 import styles from '../../styles/Home.module.css';
 import Header from '../../components/Header';
 import Link from 'next/link';
+import React, { useState, useEffect, useRef } from 'react';
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
 
 const projectsDirectory = path.join(process.cwd(), 'projects');
 
@@ -60,6 +62,27 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Project({ frontmatter, contentHtml, productSlug, product }) {
+  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+  const [images, setImages] = useState([]);
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      const imageElements = contentRef.current.getElementsByTagName('img');
+      const imageUrls = Array.from(imageElements).map(img => ({ src: img.src }));
+      setImages(imageUrls);
+
+      Array.from(imageElements).forEach((img, idx) => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', () => {
+          setIndex(idx);
+          setOpen(true);
+        });
+      });
+    }
+  }, [contentHtml]);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -87,9 +110,15 @@ export default function Project({ frontmatter, contentHtml, productSlug, product
               <span key={tag} className={styles.tag}>{tag}</span>
             ))}
           </div>
-          <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+          <div ref={contentRef} dangerouslySetInnerHTML={{ __html: contentHtml }} />
         </div>
       </main>
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        slides={images}
+        index={index}
+      />
     </div>
   );
 }

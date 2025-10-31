@@ -18,5 +18,5 @@ tags: ["Android", "Java"]
   <br>
   <br>
 ### Architecture
-<img src="/images/project_1/111.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+<img src="/images/project_1/figure_1.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
 
