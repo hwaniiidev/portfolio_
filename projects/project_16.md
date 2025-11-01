@@ -7,7 +7,15 @@ detail_page: true
 product: 'product_6'
 tags: [ 'nginx', 'NestJS', 'Typescript', 'PostgreSQL', 'AWS', 'Docker' ]
 ---
+### Background
+&nbsp;&nbsp;&nbsp;&nbsp;정리수납 및 가사 서비스 플랫폼 사업 개발을 진행 중인 고객사의 의뢰로 개발.
+무엇이 키포인트였을꼬?
 
+### Team Size
+- Project Manager: 1
+- Designer: 1
+- Backend Developer: 2
+- Frontend Developers: 2
 
 ### Responsibilities
 - Lead Developer (2 Frontend, 2 Backend)
@@ -18,7 +26,18 @@ tags: [ 'nginx', 'NestJS', 'Typescript', 'PostgreSQL', 'AWS', 'Docker' ]
 - Designed database structures for service operation (50%)
 - Designed and developed APIs for user/staff apps and the admin web platform (30%)
 
-
-
-### Architecture
+### Server Architecture
 <img src="/images/project_16/figure_1.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+
+### Service Flow Chart
+<img src="/images/project_16/figure_2.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+<img src="/images/project_16/figure_3.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+<img src="/images/project_16/figure_4.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+
+### App Screenshots
+<table>
+  <tr>
+    <td><img src="/images/project_16/figure_5.png" alt="Project Screenshot" style="max-width:100%; height:1200px; border-radius:12px; display:block; margin:auto;"></td>
+    <td><img src="/images/project_16/figure_6.png" alt="Project Screenshot" style="max-width:100%; height:1200px; border-radius:12px; display:block; margin:auto;"></td>
+  </tr>
+</table>

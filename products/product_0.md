@@ -1,4 +1,5 @@
 ---
+id: 'cashplace'
 title: 'Cashplace'
 date: '2020.2 - 2022.7 (30months)'
 summary: ''
@@ -7,10 +8,11 @@ description: '실내 매장들의 Wi-Fi, Beacon, 조도 등의 정보를 크라�
 (2022년 3월 31일 기준) MAU 1만 / DAU 800.'
 company: 'Loplat'
 company_url: 'https://loplat.com/'
+play_store_url: 'https://play.google.com/store/apps/details?id=com.loplat.cashplace&pcampaignid=web_share'
+app_store_url: 'https://apps.apple.com/kr/app/%EC%BA%90%EC%8B%9C%ED%94%8C%EB%A0%88%EC%9D%B4%EC%8A%A4/id1571265874'
 tags: [ 'Android', 'Java', 'Kotlin', 'GCP', 'Python', 'Firebase', 'BigQuery' ]
 ---
 
-[Play Store](https://play.google.com/store/apps/details?id=com.loplat.cashplace&pcampaignid=web_share)
 This is the content of the first product.
 
 ### Responsibilities

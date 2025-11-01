@@ -107,10 +107,15 @@ export default function HomePage({ projects, products }) {
           <h2 className={styles.sectionTitle}>Product</h2>
           {products.slice(0, visibleProducts).map((product) => (
             <Link href={`/products/${product.slug}`} key={product.slug} className={styles.projectLink}>
-              <div className={styles.projectCard}>
-                <h3>{product.frontmatter.title}</h3>
-                <p>{product.frontmatter.summary}</p>
-                <p>{product.frontmatter.date}</p>
+              <div className={styles.productCard}>
+                <div className={styles.productCardImageContainer}>
+                  <img src={`/images/product/${product.frontmatter.id}/representation.png`} alt={product.frontmatter.title} className={styles.projectImage} />
+                </div>
+                <div className={styles.productDetails}>
+                  <h3>{product.frontmatter.title}</h3>
+                  <p>{product.frontmatter.summary}</p>
+                  <p>{product.frontmatter.date}</p>
+                </div>
               </div>
             </Link>
           ))}

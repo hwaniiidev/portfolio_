@@ -48,7 +48,26 @@ export default function Product({ frontmatter, contentHtml }) {
       <Header />
       <main className={styles.main}>
         <div className={styles.projectPage}>
-          <h1>{frontmatter.title}</h1>
+          <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
+            <h1 style={{ marginRight: '1rem' }}>{frontmatter.title}</h1>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              {frontmatter.play_store_url && (
+                <a href={frontmatter.play_store_url} target="_blank" rel="noopener noreferrer" style={{ marginRight: '0.5rem' }}>
+                  <img src="/images/icon/logo_play_store.svg" alt="Play Store" width="24" height="24" />
+                </a>
+              )}
+              {frontmatter.app_store_url && (
+                <a href={frontmatter.app_store_url} target="_blank" rel="noopener noreferrer" style={{ marginRight: '0.5rem' }}>
+                  <img src="/images/icon/logo_apple.svg" alt="App Store" width="24" height="24" />
+                </a>
+              )}
+              {frontmatter.web_url && (
+                <a href={frontmatter.web_url} target="_blank" rel="noopener noreferrer">
+                  <img src="/images/icon/logo_web.svg" alt="Web Page" width="24" height="24" />
+                </a>
+              )}
+            </div>
+          </div>
           <div className={styles.projectMeta}>
             <p className={styles.projectDate}>
               {frontmatter.company && frontmatter.company_url && (
