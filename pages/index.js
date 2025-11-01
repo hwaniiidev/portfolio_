@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 export async function getStaticProps() {
   const projectsDirectory = path.join(process.cwd(), 'projects');
@@ -66,16 +66,17 @@ export async function getStaticProps() {
 }
 
 export default function HomePage({ projects, products }) {
-  const [visibleProducts, setVisibleProducts] = useState(3);
   const [visibleProjects, setVisibleProjects] = useState(30);
-
-  const loadMoreProducts = () => {
-    setVisibleProducts((prev) => prev + 3);
-  };
+  const scrollContainerRef = useRef(null);
 
   const loadMoreProjects = () => {
     setVisibleProjects((prev) => prev + 3);
   };
+
+  const scroll = (scrollOffset) => {
+    scrollContainerRef.current.scrollLeft += scrollOffset;
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -105,27 +106,33 @@ export default function HomePage({ projects, products }) {
 
         <section id="product" className={styles.section}>
           <h2 className={styles.sectionTitle}>Product</h2>
-          {products.slice(0, visibleProducts).map((product) => (
-            <Link href={`/products/${product.slug}`} key={product.slug} className={styles.projectLink}>
-              <div className={styles.productCard}>
-                <div className={styles.productCardImageContainer}>
-                  <img src={`/images/product/${product.frontmatter.id}/representation.png`} alt={product.frontmatter.title} className={styles.projectImage} />
-                </div>
-                <div className={styles.productDetails}>
-                  <h3>{product.frontmatter.title}</h3>
-                  <p>{product.frontmatter.summary}</p>
-                  <p>{product.frontmatter.date}</p>
-                </div>
-              </div>
-            </Link>
-          ))}
-          {visibleProducts < products.length && (
-            <div className={styles.loadMoreContainer}>
-              <button onClick={loadMoreProducts} className={styles.loadMoreButton}>
-                Load More
-              </button>
+          <div className={styles.productScrollContainerWrapper}>
+            <div className={styles.productScrollContainer} ref={scrollContainerRef}>
+              {products.map((product) => (
+                <Link href={`/products/${product.slug}`} key={product.slug} className={styles.projectLink}>
+                  <div className={styles.productCard}>
+                    <div className={styles.productCardImageContainer}>
+                      <img src={`/images/product/${product.frontmatter.id}/representation.png`} alt={product.frontmatter.title} className={styles.productImage} />
+                    </div>
+                    <div className={styles.productDetails}>
+                      <h3>{product.frontmatter.title}</h3>
+                      <p>{product.frontmatter.summary}</p>
+                      <p>{product.frontmatter.date}</p>
+                    </div>
+                      <div className={styles.productSummary}>
+                          <div className={styles.projectSummaryContent}>{product.frontmatter.summary}</div>
+                      </div>
+                  </div>
+                </Link>
+              ))}
             </div>
-          )}
+            <button className={`${styles.scrollButton} ${styles.scrollButtonLeft}`} onClick={() => scroll(-300)}>
+              &#8249;
+            </button>
+            <button className={`${styles.scrollButton} ${styles.scrollButtonRight}`} onClick={() => scroll(300)}>
+              &#8250;
+            </button>
+          </div>
         </section>
 
         <section id="projects" className={styles.section}>

@@ -1,5 +1,5 @@
 ---
-id: 'paradise_hotel'
+id: 'paradise'
 title: 'Paradise Hotel'
 date: '2023-10-27'
 description: 'This is product 3.'
