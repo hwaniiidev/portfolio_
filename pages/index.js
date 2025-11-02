@@ -99,8 +99,13 @@ export default function HomePage({ projects, products }) {
         <section id="about" className={styles.section}>
           <h2 className={styles.sectionTitle}>About Me</h2>
           <p>
-            Hello! I'm a passionate developer with a love for creating clean and efficient solutions. 
-            This is a placeholder for a more detailed introduction.
+            안녕하세요!
+
+            저는 다양한 플랫폼과 환경에서 사용자 중심의 솔루션을 만드는 것을 즐기는 개발자입니다. Android, iOS, 웹 프론트엔드 및 백엔드 개발 경험을 바탕으로 아이디어를 실체로 만드는 데 기여해왔습니다.
+
+            Loplat에서는 위치 기반 서비스와 SDK를 개발하며 대용량 트래픽 처리와 데이터 수집 플랫폼 구축 경험을 쌓았습니다. MrDevello에서는 Paradise Hotel, Nolto, Wclub, TtokTtok 365 등 다양한 분야의 프로젝트를 리드하며 React, Flutter, ReactNative 등 크로스플랫폼 앱 개발과 NestJS, Express.js를 이용한 백엔드 시스템 설계 및 구축을 담당했습니다. 특히 TtokTtok 365 프로젝트에서는 리드 개발자로서 기술적인 의사결정과 팀원들의 성장을 이끌었습니다.
+
+            새로운 기술을 배우고 적용하는 것을 두려워하지 않으며, 동료들과의 협업을 통해 더 나은 제품을 만들어나가는 과정에서 큰 보람을 느낍니다. 저의 경험과 기술을 바탕으로 새로운 가치를 창출하는 데 기여하고 싶습니다.
           </p>
         </section>
 
@@ -117,6 +122,9 @@ export default function HomePage({ projects, products }) {
                     <div className={styles.productDetails}>
                       <h3 className={styles.productCardTitle}>{product.frontmatter.title}</h3>
                       <p className={styles.productCardDate}>{product.frontmatter.date}</p>
+                    </div>
+                    <div className={styles.productSummary}>
+                      <div className={styles.productSummaryContent}>{product.frontmatter.summary}</div>
                     </div>
                   </div>
                 </Link>
