@@ -5,7 +5,7 @@ description: "Responsible for the end-to-end design, development, and maintenanc
 date: '2022.2 - 2025.6 (41months)'
 detail_page: true
 product: 'product_3'
-tags: [ 'ubuntu', 'nginx', 'Expres.js', 'TypeScript', 'Oracle' ]
+tags: [ 'ubuntu', 'nginx', 'Expres.js', 'TypeScript', 'OracleDB' ]
 ---
 
 ### Background

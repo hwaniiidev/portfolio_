@@ -48,7 +48,7 @@ export async function getStaticProps() {
 
   const projectsWithProducts = projects.map(project => {
     const product = products.find(p => p.slug === project.frontmatter.product) || null;
-    const imagePath = path.join(process.cwd(), 'public', 'images', project.slug, 'figure_1.png');
+    const imagePath = path.join(process.cwd(), 'public', 'images', project.slug, 'figure_3.png');
     const imageExists = fs.existsSync(imagePath);
     return {
       ...project,
@@ -112,7 +112,7 @@ export default function HomePage({ projects, products }) {
                 <Link href={`/products/${product.slug}`} key={product.slug} className={styles.projectLink}>
                   <div className={styles.productCard}>
                     <div className={styles.productCardImageContainer}>
-                      <img src={`/images/product/${product.frontmatter.id}/representation.png`} alt={product.frontmatter.title} className={styles.productImage} />
+                      <img src={`/images/product/${product.frontmatter.id}/representation.png`} alt={product.frontmatter.title} className={styles.projectImage} />
                     </div>
                     <div className={styles.productDetails}>
                       <h3>{product.frontmatter.title}</h3>
@@ -134,6 +134,8 @@ export default function HomePage({ projects, products }) {
             </button>
           </div>
         </section>
+
+
 
         <section id="projects" className={styles.section}>
           <h2 className={styles.sectionTitle}>Projects</h2>

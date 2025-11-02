@@ -18,7 +18,7 @@ tags: [ 'Flutter', 'Dart' ]
 - Frontend Developers: 2
 
 ### Responsibilities
-- Developed approximately 50% of the UI/UX for core feature implementation.
+- Developed approximately 70% of the UI/UX for core feature implementation.
 - Implemented location marker management and map interactions for history education programs using the Naver Map SDK (100%).
 
 ### Key Features
