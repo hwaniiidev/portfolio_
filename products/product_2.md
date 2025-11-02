@@ -1,7 +1,7 @@
 ---
 id: 'loplat_sdk'
 title: 'Loplat SDK'
-date: '2020.6 - 2022.6 (25months)'
+date: '2020.6 - 2022.7 (26months)'
 summary: 'Location Recognition SDK'
 description: 'An SDK that recognizes locations using Wi-Fi and Bluetooth beacon data. It can also track how long a user stays in a specific place and whether the user is moving. Notifications can be sent when a user visits certain stores. Version management is done via Maven repository.'
 company: 'Loplat'

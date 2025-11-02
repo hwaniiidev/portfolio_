@@ -1,5 +1,5 @@
 ---
-title: 'TtokTtok 365 API Server Development'
+title: 'API Server Development'
 summary: 'Led the backend development of a NestJS-based API server for a home services platform, architecting a scalable, high-availability AWS infrastructure.'
 description: "As the Lead Developer for 'TtokTtok 365', a new platform for home organization and housekeeping, I designed and built the entire API server architecture from the ground up. I implemented a scalable system on AWS using EC2, RDS, and ECS, configured a Blue-Green deployment strategy for high availability, and established a CI/CD pipeline with GitHub Actions and Docker to streamline development."
 date: '2024.9 - 2025.3 (7months)'
@@ -7,10 +7,6 @@ detail_page: true
 product: 'product_6'
 tags: [ 'nginx', 'NestJS', 'Typescript', 'PostgreSQL', 'AWS', 'Docker' ]
 ---
-### Background
-&nbsp;&nbsp;&nbsp;&nbsp;정리수납 및 가사 서비스 플랫폼 사업 개발을 진행 중인 고객사의 의뢰로 개발.
-무엇이 키포인트였을꼬?
-
 ### Team Size
 - Project Manager: 1
 - Designer: 1
@@ -30,14 +26,29 @@ tags: [ 'nginx', 'NestJS', 'Typescript', 'PostgreSQL', 'AWS', 'Docker' ]
 <img src="/images/project_16/figure_1.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
 
 ### Service Flow Chart
+#### 	Before Visit [Estimate Request]
 <img src="/images/project_16/figure_2.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+
+### After Visit [Estimate Delivery & Matching]
 <img src="/images/project_16/figure_3.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
+
+### After [Full Space Organization] Completed
 <img src="/images/project_16/figure_4.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />
 
 ### App Screenshots
 <table>
   <tr>
-    <td><img src="/images/project_16/figure_5.png" alt="Project Screenshot" style="max-width:100%; height:1200px; border-radius:12px; display:block; margin:auto;"></td>
-    <td><img src="/images/project_16/figure_6.png" alt="Project Screenshot" style="max-width:100%; height:1200px; border-radius:12px; display:block; margin:auto;"></td>
+    <td style="vertical-align: top;">
+      <img src="/images/project_16/figure_5.png" alt="Project Screenshot" style="max-width:300px; height:100%; border-radius:12px; display:block; margin:auto;">
+    </td>
+    <td style="vertical-align: top;">
+      <img src="/images/project_16/figure_6.png" alt="Project Screenshot" style="max-width:300px; height:100%; border-radius:12px; display:block; margin:auto;">
+    </td>
+    <td style="vertical-align: top;">
+      <img src="/images/project_16/figure_7.png" alt="Project Screenshot" style="max-width:300px; height:100%; border-radius:12px; display:block; margin:auto;">
+    </td>
   </tr>
 </table>
+
+### Admin Screenshots
+<img src="/images/project_16/figure_8.png" alt="Project Screenshot" style="max-width:100%; height:auto; border-radius:12px; display:block; margin:auto;" />

@@ -203,9 +203,6 @@ export default function HomePage({ projects, products }) {
                                          className={styles.emailLink}><em>sinhwan0211@gmail.com</em></a>
               </p>
 
-              <h2>
-                  Have a Good Day!
-              </h2>
           </section>
       </main>
 

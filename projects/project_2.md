@@ -24,5 +24,4 @@ notifying the user. To prevent this, apps that continuously access location info
   <br>
   <br>
 
-### Document
-&nbsp;&nbsp;&nbsp;&nbsp;[Click Link](https://docs.google.com/document/d/1zAfnrFkpN081OoNoRc9tTqSCx4c8VZh4av3CHL13xcc/edit?usp=sharing)
+### <a href="https://docs.google.com/document/d/1zAfnrFkpN081OoNoRc9tTqSCx4c8VZh4av3CHL13xcc/edit?usp=sharing" target="_blank">Document (Click Link)</a>

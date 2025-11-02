@@ -1,5 +1,5 @@
 ---
-title: 'CashPlace Check-in Feature'
+title: 'Check-in Feature'
 summary: 'Designed and developed the CashPlace check-in feature across Android, server, and database, enhancing user retention through in-store engagement and location-based content.'
 description: 'The CashPlace check-in feature was designed and developed end-to-end. The Android app was implemented to allow users to engage with the app while in-store. Server-side APIs were developed using GCP App Engine with Python 2.7 to handle check-in requests and verify location data. The MySQL database was designed and maintained to efficiently store and manage check-in records. Location data was also researched and validated to ensure accuracy and support strategies for increasing user retention.'
 date: '2020.4 - 2020.6 (3months)'

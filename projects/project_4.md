@@ -2,7 +2,7 @@
 title: 'Store Closure Inspection Improvement and Prevention of Duplicate POI Creation for New Stores'
 summary: 'Improved the Loplat SDK’s recognition performance and automated the existing store closure inspection process, which had been inconvenient due to manual closure reporting through external chat platforms and the lack of inspection automation.'
 description: 'Enhanced Loplat SDK recognition accuracy and automated the store closure inspection process to eliminate manual reporting through external platforms. Additionally, improved the POI management logic to prevent duplicate store entries during new store data collection, resulting in more reliable location data and streamlined operational workflows.'
-date: '2021.3 - 2020.4 (2months)'
+date: '2021.3 - 2021.4 (2months)'
 detail_page: true
 product: 'product_1'
 tags: [ 'Android', 'Java', 'Kotlin' ]

@@ -2,7 +2,7 @@
 title: 'App API Server Design and Maintenance'
 summary: 'Designed, developed, and maintained the on-premise API server (Node.js/Express) for the Paradise City Hotel''s mobile app, expanding services from web to mobile.'
 description: "Responsible for the end-to-end design, development, and maintenance of the App API server for the Incheon Paradise City Hotel. This project expanded the existing web-only services to a mobile app, introducing new features like mobile room keys and location-based promotions. The entire system was developed on-premise, utilizing the client's physical servers, and architected for high availability with L4 load balancing, Nginx reverse proxy, and an Express.js backend."
-date: '2022.2 - 2025.6 (41months)'
+date: '2023.5 - 2025.6 (26months)'
 detail_page: true
 product: 'product_3'
 tags: [ 'ubuntu', 'nginx', 'Expres.js', 'TypeScript', 'OracleDB' ]

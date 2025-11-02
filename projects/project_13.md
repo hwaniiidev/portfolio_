@@ -1,5 +1,5 @@
 ---
-title: 'Nolto App Flutter UI/UX Development'
+title: 'Flutter UI/UX Development'
 summary: 'Contributed to the frontend development of a Flutter-based history education platform, implementing core UI/UX and leading the integration of the Naver Map SDK.'
 description: "As a Frontend Developer on the 'Nolto' app, a government-funded project, I developed core UI/UX components for this Flutter-based history education platform. I took full ownership of the mapping features, integrating the Naver Map SDK to implement location-based program search, marker management, and all map interactions. The platform connects education providers with users and features mini-games to boost engagement."
 date: '2024.1 - 2024.3 (3months)'
