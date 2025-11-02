@@ -80,7 +80,7 @@ export default function HomePage({ projects, products }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>My Portfolio</title>
+        <title>ShinHwan's Portfolio</title>
         <meta name="description" content="Minimalist Portfolio Page" />
       </Head>
 
