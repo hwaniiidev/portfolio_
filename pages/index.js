@@ -48,7 +48,7 @@ export async function getStaticProps() {
 
   const projectsWithProducts = projects.map(project => {
     const product = products.find(p => p.slug === project.frontmatter.product) || null;
-    const imagePath = path.join(process.cwd(), 'public', 'images', project.slug, 'figure_3.png');
+    const imagePath = path.join(process.cwd(), 'public', 'images', project.slug, 'figure_1.png');
     const imageExists = fs.existsSync(imagePath);
     return {
       ...project,
@@ -98,26 +98,26 @@ export default function HomePage({ projects, products }) {
       <main className={styles.main}>
         <section id="about" className={styles.section}>
           <h2 className={styles.sectionTitle}>About Me</h2>
-          <p>
-            안녕하세요!
-
-            저는 다양한 플랫폼과 환경에서 사용자 중심의 솔루션을 만드는 것을 즐기는 개발자입니다. Android, iOS, 웹 프론트엔드 및 백엔드 개발 경험을 바탕으로 아이디어를 실체로 만드는 데 기여해왔습니다.
-
-            Loplat에서는 위치 기반 서비스와 SDK를 개발하며 대용량 트래픽 처리와 데이터 수집 플랫폼 구축 경험을 쌓았습니다. MrDevello에서는 Paradise Hotel, Nolto, Wclub, TtokTtok 365 등 다양한 분야의 프로젝트를 리드하며 React, Flutter, ReactNative 등 크로스플랫폼 앱 개발과 NestJS, Express.js를 이용한 백엔드 시스템 설계 및 구축을 담당했습니다. 특히 TtokTtok 365 프로젝트에서는 리드 개발자로서 기술적인 의사결정과 팀원들의 성장을 이끌었습니다.
-
-            새로운 기술을 배우고 적용하는 것을 두려워하지 않으며, 동료들과의 협업을 통해 더 나은 제품을 만들어나가는 과정에서 큰 보람을 느낍니다. 저의 경험과 기술을 바탕으로 새로운 가치를 창출하는 데 기여하고 싶습니다.
-          </p>
+            <p className={styles.aboutMeText}>
+                I am a developer who enjoys using technology <b><em>to solve complex and practical business problems, </em></b>
+                placing a strong emphasis on <b><em>team communication</em></b>. I am proficient in backend technologies
+                and enjoy the challenge of optimizing system efficiency and aligning development strategies with
+                business goals.
+                My experience across various projects extends beyond the backend, which allows me to communicate
+                effectively with developers in other domains.
+                Currently, I am expanding my expertise by studying and researching Machine Learning."
+            </p>
         </section>
 
-        <section id="product" className={styles.section}>
-          <h2 className={styles.sectionTitle}>Product</h2>
-          <div className={styles.productScrollContainerWrapper}>
-            <div className={styles.productScrollContainer} ref={scrollContainerRef}>
-              {products.map((product) => (
-                <Link href={`/products/${product.slug}`} key={product.slug} className={styles.projectLink}>
-                  <div className={styles.productCard}>
-                    <div className={styles.productCardImageContainer}>
-                      <img src={`/images/product/${product.frontmatter.id}/representation.png`} alt={product.frontmatter.title} className={styles.productImage} />
+          <section id="product" className={styles.section}>
+              <h2 className={styles.sectionTitle}>Product</h2>
+              <div className={styles.productScrollContainerWrapper}>
+                  <div className={styles.productScrollContainer} ref={scrollContainerRef}>
+                      {products.map((product) => (
+                          <Link href={`/products/${product.slug}`} key={product.slug} className={styles.projectLink}>
+                              <div className={styles.productCard}>
+                                  <div className={styles.productCardImageContainer}>
+                                      <img src={`/images/product/${product.frontmatter.id}/representation.png`} alt={product.frontmatter.title} className={styles.productImage} />
                     </div>
                     <div className={styles.productDetails}>
                       <h3 className={styles.productCardTitle}>{product.frontmatter.title}</h3>
@@ -157,7 +157,7 @@ export default function HomePage({ projects, products }) {
                           <img src={`/images/${project.slug}/figure_1.png`} alt={project.frontmatter.title} className={styles.projectImage} />
                         </div>
                       )}
-                      <h3>{project.frontmatter.title}</h3>
+
                       <div className={styles.projectMeta}>
                         <p className={styles.projectDate}>
                           {project.product && (
@@ -169,6 +169,7 @@ export default function HomePage({ projects, products }) {
                           {project.frontmatter.date}
                         </p>
                       </div>
+                      <h3>{project.frontmatter.title}</h3>
                       <div className={styles.projectSummary}>
                           <div className={styles.projectSummaryContent}>{project.frontmatter.summary}</div>
                           <div className={styles.tagsContainer}>
@@ -209,9 +210,6 @@ export default function HomePage({ projects, products }) {
       </main>
 
 
-        <footer className={styles.footer}>
-            <p>&copy; 2025 ShinHwan Kim. All Rights Reserved.</p>
-      </footer>
-    </div>
+            </div>
   );
 }

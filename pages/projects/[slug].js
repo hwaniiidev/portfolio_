@@ -29,6 +29,12 @@ export async function getStaticProps({ params }) {
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const matterResult = matter(fileContents);
 
+  if (matterResult.data.detail_page === false) {
+    return {
+      notFound: true,
+    };
+  }
+
   const processedContent = await remark()
     .use(html, { sanitize: false })
     .process(matterResult.content);

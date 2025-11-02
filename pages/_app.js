@@ -1,5 +1,6 @@
 import '../styles/globals.css';
 import { Montserrat } from 'next/font/google';
+import styles from '../styles/Home.module.css';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -15,6 +16,9 @@ function MyApp({ Component, pageProps }) {
         }
       `}</style>
       <Component {...pageProps} />
+      <footer className={styles.footer}>
+        <p>&copy; 2025 ShinHwan Kim. All Rights Reserved.</p>
+      </footer>
     </>
   );
 }

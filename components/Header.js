@@ -6,15 +6,13 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.name}>
-        <Link href="/" passHref legacyBehavior>
-          <a className={styles.navLink}>ShinHwan Kim</a>
-        </Link>
+        <Link href="/" className={styles.navLink}>ShinHwan Kim</Link>
       </div>
       <nav className={styles.nav}>
-        <Link href="/#about" passHref legacyBehavior><a className={styles.navLink}>About</a></Link>
-        <Link href="/#product" passHref legacyBehavior><a className={styles.navLink}>Product</a></Link>
-        <Link href="/#projects" passHref legacyBehavior><a className={styles.navLink}>Projects</a></Link>
-        <Link href="/#contact" passHref legacyBehavior><a className={styles.navLink}>Contact</a></Link>
+        <Link href="/#about" className={styles.navLink}>About</Link>
+        <Link href="/#product" className={styles.navLink}>Product</Link>
+        <Link href="/#projects" className={styles.navLink}>Projects</Link>
+        <Link href="/#contact" className={styles.navLink}>Contact</Link>
       </nav>
       <div className={styles.socialIcons}>
         <a href="https://github.com/hwaniiidev" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>

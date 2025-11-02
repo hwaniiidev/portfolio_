@@ -28,6 +28,15 @@
   z-index: 1000;
 }
 
+.aboutMeText {
+    font-size: 1rem; /* 16px이 기본이며, 좋은 시작점입니다 */
+    line-height: 1.6;  /* 줄간격은 160%로 설정 */
+    letter-spacing: normal; /* 자간은 폰트 기본값을 사용 */
+
+    /* 추가 팁: 단락의 최대 너비를 설정하면 긴 글을 읽기 편해집니다 */
+    max-width: 90ch; /* 'ch' 단위는 약 65개의 문자가 들어가는 너비입니다 */
+}
+
 .name {
   font-size: 2rem;
   font-weight: bold;
@@ -177,13 +186,14 @@
 .projectCard {
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 1.5rem;
+  padding: 1rem;
   margin-bottom: 1.5rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
   position: relative;
+  aspect-ratio: 1 / 1.04;
 }
 
 .projectImageContainer {
@@ -192,6 +202,7 @@
   overflow: hidden;
   border-radius: 8px;
   margin-bottom: 1rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1)
 }
 
 .projectImage {
