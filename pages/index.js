@@ -112,16 +112,12 @@ export default function HomePage({ projects, products }) {
                 <Link href={`/products/${product.slug}`} key={product.slug} className={styles.projectLink}>
                   <div className={styles.productCard}>
                     <div className={styles.productCardImageContainer}>
-                      <img src={`/images/product/${product.frontmatter.id}/representation.png`} alt={product.frontmatter.title} className={styles.projectImage} />
+                      <img src={`/images/product/${product.frontmatter.id}/representation.png`} alt={product.frontmatter.title} className={styles.productImage} />
                     </div>
                     <div className={styles.productDetails}>
-                      <h3>{product.frontmatter.title}</h3>
-                      <p>{product.frontmatter.summary}</p>
-                      <p>{product.frontmatter.date}</p>
+                      <h3 className={styles.productCardTitle}>{product.frontmatter.title}</h3>
+                      <p className={styles.productCardDate}>{product.frontmatter.date}</p>
                     </div>
-                      <div className={styles.productSummary}>
-                          <div className={styles.projectSummaryContent}>{product.frontmatter.summary}</div>
-                      </div>
                   </div>
                 </Link>
               ))}
@@ -187,10 +183,26 @@ export default function HomePage({ projects, products }) {
             </div>
           )}
         </section>
+          <section id="contact" className={`${styles.section} ${styles.lastSection}`}>
+              <h2 className={styles.sectionTitle}>Contact</h2>
+              <p>
+                  Thank you for taking the time to review my portfolio.<br/>
+                  I truly appreciate your interest.
+              </p>
+              <p>
+                  You can reach me at <a href="mailto:sinhwan0211@gmail.com"
+                                         className={styles.emailLink}><em>sinhwan0211@gmail.com</em></a>
+              </p>
+
+              <h2>
+                  Have a Good Day!
+              </h2>
+          </section>
       </main>
 
-      <footer className={styles.footer}>
-        <p>&copy; 2025 ShinHwan Kim. All Rights Reserved.</p>
+
+        <footer className={styles.footer}>
+            <p>&copy; 2025 ShinHwan Kim. All Rights Reserved.</p>
       </footer>
     </div>
   );

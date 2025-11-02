@@ -1,7 +1,7 @@
 ---
 id: 'paradise'
 title: 'Paradise Hotel'
-date: '2023-10-27'
+date: '2023.5 - 2025.6 (26months)'
 summary: 'Hotel & Casino Guest App'
 description: 'A mobile app designed for guests of Paradise Hotel & Casino in Incheon. The app allows users to book hotel rooms, access information about hotel amenities, and request room service or housekeeping during their stay. It also provides convenient access to casino-related information, enhancing the overall guest experience.'
 company: 'MrDevello'
