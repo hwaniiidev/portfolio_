@@ -8,7 +8,7 @@ const HiddenPage = () => {
 
   const links = [
     { name: 'Resume', url: 'https://drive.google.com/file/d/1MUjgaOzRPB2GF9OEkowgTE_nkgwIjPcc/view?usp=drive_link' },
-    { name: 'Portfolio', url: 'https://drive.google.com/file/d/1l7b7doHH7UVw7dcwAUqAM6KSXAOfXNEl/view?usp=drive_link' },
+    { name: 'Portfolio', url: 'https://drive.google.com/file/d/1058YdKH2jUVhsDd-ByHBqoDecTGg9wfC/view?usp=drive_link' },
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/seung-eun-lee-42ab71337' },
     { name: 'Google Drive', url: 'https://drive.google.com/drive/folders/15gY8ZFMs3LShg9Lr6TAx06FzUbaoCn2h?usp=drive_link' },
   ];
