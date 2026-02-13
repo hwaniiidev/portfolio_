@@ -7,8 +7,8 @@ const HiddenPage = () => {
   const router = useRouter();
 
   const links = [
-    { name: 'Resume', url: 'https://drive.google.com/file/d/14fbfLiYXCnpdUjSTpj-pSxA17gtP-8BZ/view?usp=sharing' },
-    { name: 'Portfolio', url: 'https://drive.google.com/file/d/1058YdKH2jUVhsDd-ByHBqoDecTGg9wfC/view' },
+    { name: 'Resume', url: 'https://drive.google.com/file/d/1MUjgaOzRPB2GF9OEkowgTE_nkgwIjPcc/view?usp=drive_link' },
+    { name: 'Portfolio', url: 'https://drive.google.com/file/d/1l7b7doHH7UVw7dcwAUqAM6KSXAOfXNEl/view?usp=drive_link' },
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/seung-eun-lee-42ab71337' },
     { name: 'Google Drive', url: 'https://drive.google.com/drive/folders/15gY8ZFMs3LShg9Lr6TAx06FzUbaoCn2h?usp=drive_link' },
   ];
@@ -25,8 +25,9 @@ const HiddenPage = () => {
         <h1 className={`${styles.username} font-sf-pro`}>Seung-Eun (Cathy) Lee</h1>
 
         <p className={`${styles.bio} font-sf-pro`}>
-          M.Arch Student at Texas A&M Univeristy<br />
-          Healthcare Architecture, Evidence<br/>-Based Design, Sustainability
+          M.Arch Student at Texas A&M Univeristy<br/>
+          Health & Wellbeing Design,<br/>
+          Evidence-Based Design, Sustainability
         </p>
 
         <div className={styles.linksContainer}>
