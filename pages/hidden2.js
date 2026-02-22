@@ -7,7 +7,7 @@ const HiddenPage2 = () => {
   const router = useRouter();
 
   const links = [
-    { name: 'Resume', url: 'https://docs.google.com/document/d/1LA-dyPk-sr1CjnjueBinyjvzq_DAg3JjAfAZq2I-u9s/edit?tab=t.0' },
+    { name: 'Resume', url: 'https://drive.google.com/file/d/1b_4sdImx91EZPyARQHelUbXLV2b5Lc5s/view?usp=drive_link' },
     { name: 'Portfolio', url: 'https://portfolio-omega-ten-19.vercel.app/' },
     { name: 'GitHub', url: 'https://github.com/hwaniiidev' },
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/shin-hwan-kim-174696380/' },
