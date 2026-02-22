@@ -80,6 +80,24 @@
   font-size: 0.9rem;
   visibility: hidden;
 }
+.heroSection {
+  width: 100%;
+  max-width: 1000px;
+  padding: 3rem 0 2rem;
+  text-align: center;
+}
+
+.heroText {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #121212;
+  font-weight: 500;
+  margin: 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section {
     width: 100%;
     max-width: 1000px;

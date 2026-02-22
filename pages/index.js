@@ -96,17 +96,11 @@ export default function HomePage({ projects, products }) {
       <Header />
 
       <main className={styles.main}>
-        <section id="about" className={styles.section}>
-          <h2 className={styles.sectionTitle}>About Me</h2>
-            <p className={styles.aboutMeText}>
-                I am a developer who enjoys using technology <b><em>to solve complex and practical business problems, </em></b>
-                placing a strong emphasis on <b><em>team communication</em></b>. I am proficient in backend technologies
-                and enjoy the challenge of optimizing system efficiency and aligning development strategies with
-                business goals.
-                My experience across various projects extends beyond the backend, which allows me to communicate
-                effectively with developers in other domains.
-                Currently, I am expanding my expertise by studying and researching Machine Learning."
-            </p>
+        <section className={styles.heroSection}>
+          <p className={styles.heroText}>
+            3-year full-stack developer with lead experience on production apps (MAU 300+).
+            Specialized in backend optimization and AI-driven development workflows.
+          </p>
         </section>
 
           <section id="product" className={styles.section}>
@@ -192,6 +186,20 @@ export default function HomePage({ projects, products }) {
             </div>
           )}
         </section>
+
+        <section id="about" className={styles.section}>
+          <h2 className={styles.sectionTitle}>About Me</h2>
+            <p className={styles.aboutMeText}>
+                I am a developer who enjoys using technology <b><em>to solve complex and practical business problems, </em></b>
+                placing a strong emphasis on <b><em>team communication</em></b>. I am proficient in backend technologies
+                and enjoy the challenge of optimizing system efficiency and aligning development strategies with
+                business goals.
+                My experience across various projects extends beyond the backend, which allows me to communicate
+                effectively with developers in other domains.
+                Currently, I am expanding my expertise by studying and researching Machine Learning.
+            </p>
+        </section>
+
           <section id="contact" className={`${styles.section} ${styles.lastSection}`}>
               <h2 className={styles.sectionTitle}>Contact</h2>
               <p>
