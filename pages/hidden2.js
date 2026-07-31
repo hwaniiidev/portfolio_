@@ -7,10 +7,10 @@ const HiddenPage2 = () => {
   const router = useRouter();
 
   const links = [
-    { name: 'Resume', url: 'https://drive.google.com/file/d/1b_4sdImx91EZPyARQHelUbXLV2b5Lc5s/view?usp=drive_link' },
-    { name: 'Portfolio', url: 'https://portfolio-omega-ten-19.vercel.app/' },
+    { name: 'CV / Resume', url: 'https://drive.google.com/file/d/1b_4sdImx91EZPyARQHelUbXLV2b5Lc5s/view?usp=drive_link' },
+    { name: 'Portfolio', url: 'https://www.hankkim.me/' },
     { name: 'GitHub', url: 'https://github.com/hwaniiidev' },
-    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/shin-hwan-kim-174696380/' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/hank-kim-174696380' },
   ];
 
   return (
@@ -20,9 +20,9 @@ const HiddenPage2 = () => {
           <img src="/images/hidden2/profile_img.png" alt="Profile" className={styles.profileImage} />
         </div>
         <Head>
-          <title>ShinHwan Kim's Links</title>
+          <title>Hank Kim</title>
         </Head>
-        <h1 className={`${styles.username} font-sf-pro`}>ShinHwan Kim</h1>
+        <h1 className={`${styles.username} font-sf-pro`}>Hank (Shin-hwan) Kim</h1>
 
         <p className={`${styles.bio} font-sf-pro`}>
           Research Assistant (GRA) at East Texas A&M University<br/>

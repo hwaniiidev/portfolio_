@@ -20,12 +20,20 @@
   right: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   padding: 1rem 2rem;
   border-bottom: 1px solid #ddd;
   background-color: #FFFFFF;
   z-index: 1000;
+  box-sizing: border-box;
+}
+
+.headerInner {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .aboutMeText {
@@ -70,16 +78,6 @@
   gap: 1rem;
 }
 
-.toggleButton {
-  background: none;
-  border: 1px solid #ddd;
-  color: #121212;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  visibility: hidden;
-}
 .heroSection {
   width: 100%;
   max-width: 1000px;
@@ -110,7 +108,7 @@
 
 
 .sectionTitle {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -199,7 +197,8 @@
 
 .projectCardWrapper {
   position: relative;
-  margin-bottom: 0;
+  flex: 0 0 360px;
+  margin: 0.4rem;
 }
 
 .projectCard {
@@ -398,6 +397,24 @@
   font-weight: bold;
 }
 
+.contactLinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.contactLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #121212;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
 .emailLink:hover {
   text-decoration: underline;
 }
@@ -409,4 +426,31 @@
 .productSummaryContent {
   color: #121212;
   font-weight: bold;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .header {
+    padding: 0.7rem 1rem;
+  }
+
+  .name {
+    font-size: 1.4rem;
+  }
+
+  .socialIcons {
+    gap: 0.7rem;
+  }
+
+  .socialIcons svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .main {
+    padding: 4rem 0 0.3rem;
+  }
 }
