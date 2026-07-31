@@ -97,6 +97,7 @@ export default function HomePage({ projects, products }) {
 
       <main className={styles.main}>
         <section className={styles.heroSection}>
+          <img src="/images/hidden2/profile_img.png" alt="Hank Kim" className={styles.heroProfileImage} />
           <p className={styles.heroText}>
             3-year full-stack developer with lead experience on production apps (MAU 300+).
             Specialized in backend optimization and AI-driven development workflows.

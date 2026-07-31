@@ -82,7 +82,18 @@
   width: 100%;
   max-width: 1000px;
   padding: 3rem 0 2rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.heroProfileImage {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .heroText {
@@ -92,8 +103,6 @@
   font-weight: 500;
   margin: 0;
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .section {
@@ -452,5 +461,10 @@
 
   .main {
     padding: 4rem 0 0.3rem;
+  }
+
+  .heroProfileImage {
+    width: 84px;
+    height: 84px;
   }
 }
