@@ -7,7 +7,7 @@ const HiddenPage2 = () => {
   const router = useRouter();
 
   const links = [
-    { name: 'CV / Resume', url: 'https://drive.google.com/file/d/1b_4sdImx91EZPyARQHelUbXLV2b5Lc5s/view?usp=drive_link' },
+    { name: 'CV / Resume', url: 'https://docs.google.com/document/d/1yytvMcEAKfdy6gbQORTjE1dVCeKPliwAGdEN3sGlmgE/edit?usp=sharing' },
     { name: 'Portfolio', url: 'https://www.hankkim.me/' },
     { name: 'GitHub', url: 'https://github.com/hwaniiidev' },
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/hank-kim-174696380' },

@@ -10,7 +10,17 @@
       "Bash(xargs:*)",
       "Bash(grep:*)",
       "Bash(convert:*)",
-      "Bash(magick:*)"
+      "Bash(magick:*)",
+      "Bash(npm run *)",
+      "WebFetch(domain:matthewtse.com)",
+      "Bash(awk '/\\\\.header[ ,{]/,/^}/' styles/Home.module.css)",
+      "Bash(awk '/\\\\.sectionTitle[ ,{]/,/^}/' styles/Home.module.css)",
+      "Bash(lsof -i :3000 -sTCP:LISTEN -t)",
+      "Bash(awk '/\\\\.toggleButton[ ,{]/{f=1} f{print} f&&/^}/{f=0}' styles/Home.module.css)",
+      "Bash(awk '/\\\\.iconLink[ ,{]/{f=1} f{print} f&&/^}/{f=0}' styles/Home.module.css)",
+      "Bash(awk '/\\\\.socialIcons[ ,{]/{f=1} f{print} f&&/^}/{f=0}' styles/Home.module.css)",
+      "Bash(awk '/\\\\.emailLink[ ,{]/{f=1} f{print} f&&/^}/{f=0}' styles/Home.module.css)",
+      "Bash(awk '/\\\\.lastSection[ ,{]/{f=1} f{print} f&&/^}/{f=0}' styles/Home.module.css)"
     ],
     "model": "sonnet"
   }

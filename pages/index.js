@@ -99,8 +99,9 @@ export default function HomePage({ projects, products }) {
         <section className={styles.heroSection}>
           <img src="/images/hidden2/profile_img.png" alt="Hank Kim" className={styles.heroProfileImage} />
           <p className={styles.heroText}>
-            3-year full-stack developer with lead experience on production apps (MAU 300+).
-            Specialized in backend optimization and AI-driven development workflows.
+              Software engineer turned researcher.
+              Five years shipping production systems in Seoul — backend, mobile, and infrastructure at 100M+ requests per month.
+              Now building deep learning models for UAV localization as a graduate researcher in Texas.
           </p>
         </section>
 
@@ -190,13 +191,10 @@ export default function HomePage({ projects, products }) {
         <section id="about" className={styles.section}>
           <h2 className={styles.sectionTitle}>About Me</h2>
             <p className={styles.aboutMeText}>
-                I am a developer who enjoys using technology <b><em>to solve complex and practical business problems, </em></b>
-                placing a strong emphasis on <b><em>team communication</em></b>. I am proficient in backend technologies
-                and enjoy the challenge of optimizing system efficiency and aligning development strategies with
-                business goals.
-                My experience across various projects extends beyond the backend, which allows me to communicate
-                effectively with developers in other domains.
-                Currently, I am expanding my expertise by studying and researching Machine Learning.
+                I started in architecture and ended up writing software. Five years in Seoul building production systems taught me that the hard part is rarely the code. It's understanding the domain well enough to know what to build. I wrote a location SDK from scratch, ran an API server handling 100M+ requests a month, and shipped mobile apps in Flutter and Kotlin.
+                <br/>
+                <br/>
+                I now research deep learning at East Texas A&M, building models that estimate UAV position when GPS fails. The through-line is spatial data: buildings, locations, trajectories. I care about systems that hold up in production, whether that's a backend serving millions of requests or a model that has to run on limited hardware.
             </p>
         </section>
 
@@ -220,7 +218,7 @@ export default function HomePage({ projects, products }) {
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                       <span>LinkedIn</span>
                   </a>
-                  <a href="https://drive.google.com/file/d/1b_4sdImx91EZPyARQHelUbXLV2b5Lc5s/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+                  <a href="https://docs.google.com/document/d/1yytvMcEAKfdy6gbQORTjE1dVCeKPliwAGdEN3sGlmgE/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                           <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5z"/>
                           <text x="12" y="17" fontFamily="sans-serif" fontSize="13" textAnchor="middle" fill="white" fontWeight="bold">CV</text>
